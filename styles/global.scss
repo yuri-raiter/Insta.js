@@ -1,0 +1,11 @@
+:root {
+  --gray-dark: #242423;
+  --gray-light: #333533;
+  --white: #FEFFFE;
+  --pink: #EC368D;
+}
+
+body {
+  background: var(--gray-dark);
+  font-family: 'Poppins', sans-serif;
+}
