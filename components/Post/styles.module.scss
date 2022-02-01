@@ -1,0 +1,53 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background: var(--gray-light);
+  border: 1px solid rgba(254, 255, 254, 0.5);
+}
+
+.post + .post  {
+  margin-top: 2rem;
+}
+
+.photo-username {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(254, 255, 254, 0.3);
+
+  img {
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+  }
+
+  p {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+}
+
+.post-image {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.like-button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  svg {
+    stroke: var(--white);
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+}
