@@ -1,0 +1,39 @@
+.container {
+  background: var(--gray-light);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--pink);
+}
+
+.user-greetings {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  p {
+    margin-left: 0.5rem;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
