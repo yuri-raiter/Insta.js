@@ -1,0 +1,50 @@
+.credentials {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0 2rem 0;
+
+  div + div {
+    margin-top: 1.5rem;
+  }
+
+  input {
+    background: transparent;
+    font-size: 0.8rem;
+    color: rgba(254, 255, 254, 0.5);
+    margin-left: 1rem;
+    flex: 1;
+  }
+}
+
+.input-icons {
+  outline: 1.5px solid rgba(254, 255, 254, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  display: flex;
+}
+
+.links-and-button {
+  display: flex;
+  align-items: center;
+
+  p, button {
+    font-size: 0.8rem;
+    color: var(--white);
+  }
+  button {
+    background: var(--pink);
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+
+  p + p {
+    margin-left: 2rem;
+  }
+}
