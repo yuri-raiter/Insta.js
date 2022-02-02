@@ -1,7 +1,7 @@
 :root {
-  --gray-dark: #242423;
-  --gray-light: #333533;
-  --white: #FEFFFE;
+  --white: #FFFFFF;
+  --gray-light: #EDEDED;
+  --black: #242424;
   --pink: #EC368D;
 }
 
@@ -27,7 +27,7 @@ div#__next {
 }
 
 body {
-  background: var(--gray-dark);
+  background: var(--gray-light);
 }
 
 body, button, input {

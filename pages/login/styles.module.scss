@@ -9,18 +9,28 @@
 
   input {
     background: transparent;
-    font-size: 0.8rem;
-    color: rgba(254, 255, 254, 0.5);
+    font-size: 0.85rem;
+    color: var(--black);
     margin-left: 1rem;
     flex: 1;
+
+    &::placeholder {
+      color: rgba(36, 36, 36, 0.5);
+    }
   }
 }
 
 .input-icons {
-  outline: 1.5px solid rgba(254, 255, 254, 0.5);
+  background: rgba(237, 237, 237, 0.5);
   border-radius: 0.3rem;
   padding: 0.7rem;
   display: flex;
+
+  svg {
+    stroke: var(--pink);
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }
 
 .links-and-button {
@@ -28,11 +38,17 @@
   align-items: center;
 
   p, button {
-    font-size: 0.8rem;
-    color: var(--white);
+    font-size: 0.85rem;
   }
+
+  p {
+    color: var(--black);
+  }
+
   button {
+    color: var(--white);
     background: var(--pink);
+    font-weight: 500;
     padding: 0.6rem 0.8rem;
     border-radius: 0.5rem;
     cursor: pointer;

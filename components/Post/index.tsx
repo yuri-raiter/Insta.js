@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Heart } from 'react-feather'
+import { Bookmark, Heart } from 'react-feather'
 import styles from './styles.module.scss'
 
 export default function Post() {
@@ -11,14 +11,15 @@ export default function Post() {
       </div>
       <div className={styles['post-image']}>
         <Image
-          src='/post-image.jpg'
+          src='/dog2.jpg'
           alt='post image'
           layout='fill'
           objectFit='cover'
         />
       </div>
-      <div className={styles['like-button']}>
+      <div className={styles.buttons}>
         <Heart />
+        <Bookmark />
       </div>
     </div>
   )

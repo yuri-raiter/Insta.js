@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import LoginRegisterCard from '../../components/LoginRegisterCard.tsx'
+import { User, Key } from 'react-feather'
 import styles from './styles.module.scss'
 
 export default function Login() {
@@ -7,21 +8,11 @@ export default function Login() {
     <LoginRegisterCard title='Log in'>
       <div className={styles.credentials}>
         <div className={styles['input-icons']}>
-          <Image
-            src='/user.svg'
-            width={18}
-            height={24}
-            alt='User svg'
-          />
+          <User />
           <input type="text" placeholder='Your username' />
         </div>
         <div className={styles['input-icons']}>
-          <Image
-            src='/password.svg'
-            width={24}
-            height={24}
-            alt='Password svg'
-          />
+          <Key />
           <input type="password" placeholder='Password' />
         </div>
       </div>

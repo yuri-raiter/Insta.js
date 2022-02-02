@@ -4,11 +4,15 @@
 
   input {
     background: transparent;
-    font-size: 0.8rem;
-    color: rgba(254, 255, 254, 0.5);
-    outline: 1.5px solid rgba(254, 255, 254, 0.5);
+    font-size: 0.85rem;
+    color: var(--black);
+    background: rgba(237, 237, 237, 0.5);
     border-radius: 0.3rem;
     padding: 0.7rem;
+
+    &::placeholder {
+      color: rgba(36, 36, 36, 0.5);
+    }
   }
 }
 
@@ -26,7 +30,7 @@
   flex-direction: column;
   
   label {
-    color: var(--white);
+    color: rgba(36, 36, 36, 0.8);
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -50,7 +54,7 @@
   }
 
   p, button {
-    color: var(--white);
+    color: var(--black);
   }
 
   a {

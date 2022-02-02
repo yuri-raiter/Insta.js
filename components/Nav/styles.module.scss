@@ -1,7 +1,10 @@
 .container {
-  background: var(--gray-light);
+  background: var(--white);
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .content {
@@ -32,7 +35,7 @@
 
   p {
     margin-left: 0.5rem;
-    color: var(--white);
+    color: var(--black);
     font-size: 0.9rem;
     font-weight: 600;
   }

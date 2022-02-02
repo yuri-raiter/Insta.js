@@ -7,9 +7,9 @@
 }
 
 .container {
-  background: var(--gray-light);
+  background: var(--white);
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -32,7 +32,7 @@
 
   h1 {
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black);
     margin-bottom: 3rem;
   }
 }
