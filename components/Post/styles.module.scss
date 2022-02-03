@@ -32,8 +32,12 @@
   position: relative;
   height: 700px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     height: 600px;
+  }
+
+  @media (max-width: 600px) {
+    height: 500px;
   }
 }
 
@@ -49,5 +53,18 @@
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
+  }
+}
+
+.post-message {
+  padding: 0 1rem 1rem 1rem;
+
+  p, span {
+    color: var(--black);
+    font-size: 0.95rem;
+  }
+
+  span {
+    font-weight: 500;
   }
 }

@@ -11,7 +11,7 @@ export default function Post() {
       </div>
       <div className={styles['post-image']}>
         <Image
-          src='/dog2.jpg'
+          src='/dog1.jpg'
           alt='post image'
           layout='fill'
           objectFit='cover'
@@ -20,6 +20,9 @@ export default function Post() {
       <div className={styles.buttons}>
         <Heart />
         <Bookmark />
+      </div>
+      <div className={styles['post-message']}>
+        <p><span>username </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis odit, error quidem beatae autem accusantium fugiat architecto eveniet itaque nulla.</p>
       </div>
     </div>
   )
