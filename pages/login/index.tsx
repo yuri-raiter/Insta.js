@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import LoginRegisterCard from '../../components/LoginRegisterCard.tsx'
 import { User, Key } from 'react-feather'
 import styles from './styles.module.scss'

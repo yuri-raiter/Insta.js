@@ -20,8 +20,20 @@
   display: flex;
   margin-bottom: 1.5rem;
 
-  .input-label + .input-label {
+  .input-label-message + .input-label-message {
     margin-left: 2rem;
+  }
+}
+
+.input-label-message {
+  display: flex;
+  flex-direction: column;
+  
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--pink);
   }
 }
 
@@ -38,7 +50,7 @@
 }
 
 .username-password {
-  .input-label + .input-label {
+  .input-label-message + .input-label-message {
     margin-top: 1.5rem;
   }
 }
