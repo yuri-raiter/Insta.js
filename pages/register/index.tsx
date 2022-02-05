@@ -8,12 +8,14 @@ export default function Register() {
     initialValues: {
       firstName: '',
       lastName: '',
+      email: '',
       username: '',
       password: '',
     },
     validationSchema: Yup.object({
       firstName: Yup.string().required('Required'),
       lastName: Yup.string().required('Required'),
+      email: Yup.string().email('Must be a valid e-mail').required('Required'),
       username: Yup.string().required('Required'),
       password: Yup.string().required('Required').max(8, 'Maximum of 8 digits')
     }),
@@ -22,11 +24,11 @@ export default function Register() {
 
   return (
     <LoginRegisterCard title='Register'>
-      <form onSubmit={formik.handleSubmit}className={styles['user-data']}>
+      <form onSubmit={formik.handleSubmit} className={styles['user-data']}>
         <div className={styles.name}>
           <div className={styles['input-label-message']}>
             <div className={styles['input-label']}>
-              <label htmlFor="first-name">First Name</label>
+              <label htmlFor="firstname">First Name</label>
               <input
                 id='firstName'
                 name='firstName'
@@ -43,7 +45,7 @@ export default function Register() {
           </div>
           <div className={styles['input-label-message']}>
             <div className={styles['input-label']}>
-              <label htmlFor="last-name">Last Name</label>
+              <label htmlFor="lastname">Last Name</label>
               <input
                 id='lastName'
                 name='lastName'
@@ -59,7 +61,24 @@ export default function Register() {
             ) : null}
           </div>
         </div>
-        <div className={styles['username-password']}>
+        <div className={styles['email-username-password']}>
+          <div className={styles['input-label-message']}>
+            <div className={styles['input-label']}>
+              <label htmlFor="email">E-mail</label>
+              <input
+                id='email'
+                name='email'
+                type="email"
+                placeholder="johndoe@gmail.com"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
+              />
+            </div>
+            {formik.touched.email && formik.errors.email ? (
+              <p>{formik.errors.email}</p>
+            ) : null}
+          </div>
           <div className={styles['input-label-message']}>
             <div className={styles['input-label']}>
               <label htmlFor="username">Username</label>

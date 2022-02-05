@@ -1,5 +1,5 @@
 import LoginRegisterCard from '../../components/LoginRegisterCard.tsx'
-import { User, Key } from 'react-feather'
+import { Key, Mail } from 'react-feather'
 import styles from './styles.module.scss'
 
 export default function Login() {
@@ -7,8 +7,8 @@ export default function Login() {
     <LoginRegisterCard title='Log in'>
       <div className={styles.credentials}>
         <div className={styles['input-icons']}>
-          <User />
-          <input type="text" placeholder='Your username' />
+          <Mail />
+          <input type="email" placeholder='E-mail' />
         </div>
         <div className={styles['input-icons']}>
           <Key />
