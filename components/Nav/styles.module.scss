@@ -23,26 +23,7 @@
   color: var(--pink);
 }
 
-.button-greetings {
-  display: flex;
-  align-items: center;
-}
-
-.plus {
-  display: flex;
-  border: 2px solid var(--black);
-  border-radius: 0.5rem;
-  margin-right: 1rem;
-
-  svg {
-    stroke: var(--black);
-    height: 1.3rem;
-    width: 1.3rem;
-    cursor: pointer;
-  }
-}
-
-.user-greetings {
+.button-user {
   display: flex;
   align-items: center;
 
@@ -50,12 +31,20 @@
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    cursor: pointer;
   }
+}
 
-  p {
-    margin-left: 0.5rem;
-    color: var(--black);
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
+.plus {
+  display: flex;
+  border: 2px solid var(--black);
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.icons {
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+  color: var(--black);
 }

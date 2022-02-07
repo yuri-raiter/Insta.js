@@ -47,13 +47,13 @@
   align-items: center;
   justify-content: space-between;
   flex: 1;
+}
 
-  svg {
-    stroke: var(--black);
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-  }
+.icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: var(--black);
 }
 
 .post-message {

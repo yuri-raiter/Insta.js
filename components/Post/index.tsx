@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Bookmark, Heart } from 'react-feather'
+import { RiHeart3Line, RiBookmarkLine } from "react-icons/ri"
 import styles from './styles.module.scss'
 
 export default function Post() {
@@ -18,8 +18,8 @@ export default function Post() {
         />
       </div>
       <div className={styles.buttons}>
-        <Heart />
-        <Bookmark />
+        <RiHeart3Line className={styles.icons}/>
+        <RiBookmarkLine className={styles.icons}/>
       </div>
       <div className={styles['post-message']}>
         <p><span>username </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis odit, error quidem beatae autem accusantium fugiat architecto eveniet itaque nulla.</p>

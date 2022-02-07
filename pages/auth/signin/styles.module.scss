@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .buttons + .buttons {
+    margin-top: 1.5rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  width: 100%;
+  background: transparent;
+  outline: 2px solid var(--gray-light);
+  border-radius: 0.5rem;
+  transition: background .2s ease;
+  cursor: pointer;
+
+  p {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    background: rgba(237, 237, 237, 0.3);
+  }
+}
+
+.icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: var(--pink);
+}

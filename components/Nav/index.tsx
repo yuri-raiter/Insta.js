@@ -1,19 +1,27 @@
-import { Plus } from 'react-feather'
+import { useSession, signOut } from 'next-auth/react'
+import { RiAddLine } from "react-icons/ri"
 import styles from './styles.module.scss'
 
 export default function Nav() {
+  const { data: session } = useSession()
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.logo}>Insta.js</h1>
-        <div className={styles['button-greetings']}>
+        <div className={styles['button-user']}>
           <div className={styles.plus}>
-            <Plus />
+            <RiAddLine className={styles.icons} />
           </div>
-          <div className={styles['user-greetings']}>
-            <img src="/photo.png" alt="profile photo" />
-            <p>Hey, User!</p>
-          </div>
+          {session && (
+            <img 
+              src={session.user?.image!} 
+              alt="profile photo"
+              onClick={() => signOut({
+                callbackUrl: '/auth/signin'
+              })} 
+            />
+          )}
         </div>
       </div>
     </div>
