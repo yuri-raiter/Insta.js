@@ -1,0 +1,46 @@
+.new-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(36, 36, 36, 0.1);
+  
+  h1 {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg, p, button {
+    color: var(--black);
+  }
+  
+  svg {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+
+  label {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+  }
+}
