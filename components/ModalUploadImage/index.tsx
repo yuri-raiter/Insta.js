@@ -7,10 +7,14 @@ interface IModalUploadImage {
 
 export default function ModalUploadImage({ setImage }: IModalUploadImage) {
   function onImageChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const reader = new FileReader()
     const img = e.target.files![0]
-    const imgURL = URL.createObjectURL(img)
-
-    setImage(imgURL)
+    
+    reader.readAsDataURL(img)
+    reader.onload = readerEvent => {
+      const imgDataURL = readerEvent.target?.result
+      setImage(imgDataURL as string)
+    }
   }
 
   return (
