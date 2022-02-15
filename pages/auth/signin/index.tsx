@@ -12,7 +12,7 @@ export default function SignIn({ providers }: ISignIn) {
   function ProviderIcon(name: string) {
     if (name == 'Google') return <RiGoogleFill className={styles.icons} />
     if (name == 'GitHub') return <RiGithubFill className={styles.icons} />
-    if (name == 'Facebook') return <RiFacebookCircleFill className={styles.icons} />
+    // if (name == 'Facebook') return <RiFacebookCircleFill className={styles.icons} />
   }
 
   return (
