@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Insta.js (not finished yet)
 
-## Getting Started
+## Sign In Page
+<img src='screenshots/01.PNG'>
 
-First, run the development server:
+## Feed
+<img src='screenshots/02.PNG'>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Upload Image Modal
+<img src='screenshots/03.PNG'>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Chosen image preview and post message
+<img src='screenshots/04.PNG'>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Uploaded post in the feed
+<img src='screenshots/05.PNG'>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Description
+It's a Next.js project that reproduces some functionalities of Instagram, like:
+* Posts upload
+* Realtime feed
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Firebase v9
+It was used to store user data and set the login providers (Google and GitHub).
 
-## Learn More
+### NextAuth.js
+It was used to handle authentication with the providers set in firebase and the user's session (if logged or not).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Tech list
+* Next.js
+* Typescript
+* Sass
+* Firebase
+* NextAuth.js
+* react-modal
+* react-icons
