@@ -12,13 +12,14 @@ export default NextAuth({
     }),
     GitHubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
     // FacebookProvider({
     //   clientId: process.env.FACEBOOK_CLIENT_ID!,
-    //   clientSecret: process.env.FACEBOOK_CLIENT_SECRET!
+    //   clientSecret: process.env.FACEBOOK_CLIENT_SECRET!,
     // })
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: '/auth/signin'
   },
