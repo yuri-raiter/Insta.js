@@ -1,4 +1,4 @@
-# Insta.js (not finished yet)
+# Insta.js
 
 ## Sign In Page
 <img src='screenshots/01.PNG'>
